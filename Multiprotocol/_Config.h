@@ -41,7 +41,7 @@
 //Modify the channel order based on your TX: AETR, TAER, RETA...
 //Examples: Flysky & DEVO is AETR, JR/Spektrum radio is TAER, Multiplex is AERT...
 //Default is AETR.
-#define AETR
+#define TAER
 
 //Uncomment to reverse the direction of the specified channel for all protocols
 //#define REVERSE_AILERON
@@ -377,7 +377,7 @@
 /*************************/
 //In this section you can configure all details about PPM.
 //If you do not plan to use the PPM mode comment this line using "//" to save Flash space, you don't need to configure anything below in this case
-#define ENABLE_PPM
+//#define ENABLE_PPM
 
 /** TX END POINTS **/
 //It is important for the module to know the endpoints of your radio.
