@@ -203,7 +203,7 @@ static void __attribute__((unused)) HOTT_prep_data_packet()
 		#ifdef FAILSAFE_ENABLE
 			if(failsafe_count==1)
 			{ // first failsafe packet
-				packet[3] |= 0x40;
+				packet[3] = 0x40;
 				uint16_t fs=Failsafe_data[ch];
 				if( fs == FAILSAFE_CHANNEL_HOLD || fs == FAILSAFE_CHANNEL_NOPULSES)
 					val|=0x8000;						// channel hold flag
@@ -215,7 +215,7 @@ static void __attribute__((unused)) HOTT_prep_data_packet()
 			}
 			else if(failsafe_count==2)
 			{ // second failsafe packet=timing?
-				packet[3] |= 0x50;
+				packet[3] = 0x50;
 				if(i==4)
 					val=2;
 				else
